@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1186dp"
+        android:layout_height="848dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        app:srcCompat="@drawable/forest" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="341dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="362dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="136dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="44dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/label"
+        android:layout_width="136dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/label"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="800dp"
+        android:layout_marginBottom="23dp"
+        android:alpha="0.8"
+        android:text="@string/songname"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/shape" />
+
+    <ImageView
+        android:id="@+id/shape1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="140dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_next"
+        app:layout_constraintStart_toEndOf="@+id/skip_previous"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/shadow1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="140dp"
+        android:alpha="0.0"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_next"
+        app:layout_constraintStart_toEndOf="@+id/skip_previous"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/shadow"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:onClick="play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="140dp"
+        android:tag=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_next"
+        app:layout_constraintStart_toEndOf="@+id/skip_previous"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/play"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/shape2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="140dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forward_10"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:onClick="next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forward_10"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/skip_next"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+
+    <ImageView
+        android:id="@+id/shape3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="140dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toEndOf="@+id/replay_10"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/skip_previous"
+        android:onClick="previous"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play"
+        app:layout_constraintStart_toEndOf="@+id/replay_10"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/skip_previous"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+
+    <ImageView
+        android:id="@+id/shape4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="150dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toEndOf="@+id/skip_next"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/forward_10"
+        android:onClick="forwardskip"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/skip_next"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/forward_10"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/shape5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="150dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_previous"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/replay_10"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/todo"
+        android:onClick="prevskip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/skip_previous"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.461"
+        app:srcCompat="@drawable/replay_10"
+        tools:ignore="MissingConstraints, VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/shape6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.5"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shape5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape"
+        tools:ignore="MissingConstraints, VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/replay"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/todo"
+        android:onClick="replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shape5"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/replayoff"
+        tools:ignore="MissingConstraints, VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
